@@ -12,5 +12,17 @@ describe('Index page test', () => {
         );
         done();
       });
+  }),
+  it('gets second page url', done => {
+    server
+      .get(`${BASE_URL}/2`)
+      .expect(200)
+      .end((err, res) => {
+        expect(res.status).to.equal(200);
+        expect(res.body.message).to.equal(
+          'HAHA'
+        );
+        done();
+      });
   });
 });
