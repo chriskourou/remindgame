@@ -35,7 +35,8 @@ deploy:
   provider: heroku
   api_key:
     secure: 2wqS0JsgGNKTFTqJRna2zRj5CZFXpbcxMFCBGVyySIvq7wjDYw/NpGM/QupHBcc13tE+jTlRLTmlo/HfrwJg6fR95aQF/+rVf8gVJPTRdtAFl7h0Rt0ww5TtfUmlN9k/o4iqFovwGQzs3hPAEiZJtKjg9I8U8gzkJGcESgqx5enEyxhqIkxlSKwja990XsYwQJN4/esoxoUEziHe46FPLn7buPldg85+0Rb+SyipaJ0B/DHkYVtqcL7hMTpc4avf3XsevpDBZZi7fNTz7AXtuUpziaQLx+CHBOeWEYw/4Pp/1FjRshKrrcCjXbgnvoKNfj9TU0QXkrY6Vs7PnplYtBEvOMyj5EwoSpwlaWiABP+ggCAlJ/GAfVy35cMwx7FMdVV4aoAhcbjQb2gkTINBcSeVBOEBZIzm/yL+2ahrmJi+ehEx8WljfbBhO35ziAcoSdgxcV1r4YCiEowCldBDVJYBjpnSCMg+ldcG6oTbbTO1XD5KePs0Lcao+mtRDaBOdXjejeZ1JM7iSNvVu6VS/ytyXFkYHHT+ZJWasXu5j8jM06Hz5UpDJUP6Zy34OpLFneVSe9cbqx13i/5+0AQ2ZYC1qVayadE54I1gtBmULb+2PCf+unCNoHYC6vct21TftsrKE+PE8D2/F3wEi+TLLT2MscgJgF66tk0gfFlrkVs=
-  app: remind2-test
+  app: 
+    master: remind2-test
   on:
     repo: chriskourou/remindgame
   skip_cleanup: 'true'
