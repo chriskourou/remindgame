@@ -2,7 +2,7 @@ environment:
   nodejs_version: "12"
 install:
   - ps: Install-Product node $env:nodejs_version
-  - yarn install --force
+  - yarn install
 test_script:
   - yarn test
 build: off
