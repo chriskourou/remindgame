@@ -3,4 +3,8 @@ import dotenv from 'dotenv';
 import { connectionString } from '../settings';
 dotenv.config();
 
-export const pool = new Pool({ connectionString: connectionString, ssl: true});
+export const pool = new Pool({ connectionString: connectionString, 
+  ssl: {
+    rejectUnauthorized: false
+  }
+});
