@@ -12,7 +12,8 @@ install: yarn
 after_success: yarn coverage
 before_script:
 - psql -c 'create database testdb;' -U postgres
-- curl -L https://codeclimate.com/downloads/test-reporter/test-reporter-latest-linux-amd64  > ./cc-test-reporter
+- curl -L https://codeclimate.com/downloads/test-reporter/test-reporter-latest-linux-amd64  >
+  ./cc-test-reporter
 - chmod +x ./cc-test-reporter
 - "./cc-test-reporter before-build"
 script:
@@ -35,4 +36,4 @@ deploy:
   app:
     master: remind2-test
   api_key:
-    secure: gl7rL505uV/XkTzgl01fAacr84IbINCzcPk3/HoYDlfLV7LHRpaRxcwBJlh+ymcD9iBpbjosiU/yB0W+G3O3WnBIr1Qm3WL4xz7cYCKsjfNwwxMUuIKrOVwC/O3PabzriFtL9OWKVIsi6PgnkSxIILgOZuGjaOdbdPL8F0CMNbQ+15acyY1//6MPObzGRElZve5peh0Y60fqUlIRtHTVDLfFdlE+heIOAR3fprIDcVLATh0M8/xx9SDH/lZ3h3tB86iyUdBBRejyHQdpZwDitc+Sqjc71J8mJ5Ucvq+1yy9wnNS0nf3Ueo0NUH95iIbH9IG7nHOneeh/TzH71HF82bi3DaGcNO6SmFDkRzfV7J3zafdn1Mv4/5we4Sk+pSIYOSl87Sk36VpjzuY8bN4gmb83BYXuivLDs6n23IZUvw1Th3DpUlwGhp+MWivTVoCHpagqBjSz8s9U7/w+o/xWIVELbBuyCIA7o2Wy+r5v/y0X4f3xeZM5jQQHNONoVuPpeuCDozgxWiMWrPaPx2EhPYJU8b3baAGEcun2TKPyvxIMM/t2ZSb6H4AwKheT9gB0r5NLM38TsOrX/DVjUhlOf9OQf/OVbTpptNyIeo6ipv4GOeiQEHtp/tWgSdwwcN1WTMypmxyZHgWRy7kt53fbZ7GGU2fPt5QsOKxxVHAD33M=
+    secure: UW66wVEbar3Cn89kICQbPyOJe3Rz97+UcumOzwr+QkYOqq5xO4kvvb+karGrZO0ApOVML5DMwVkF5ya1g8fX1w0/zUAuDr6t2h2a2ykbv41T7JBS2GssV40FRP23ZG0ubk8VhR3lGfWdktlpAnnmxiNhDFsfPzlQTEApg+VB0prmJjjNXByXaRb8b3QcUaF91p/U4Kxl/d97uBoNofBg3YfjcuCRv/xfw+58PwDUMqv/vvda1lNxjgaIkXvFjvhPylt1veLZc0b/IFtc5T58a4pD8jNDA/0RCC0vm5cm+S7c7C3251tOeemflatNJzPHE6OCpQB5Wz0bSsvtHfc0oin7SBw6Th2B9e3RIt6cstO60d1oq6PjQqbQVLX+SWO2DJ5UJWt/9KBFD9z41WrOcBP+3V7PeMBdljQyv3OrZ4BFhx83zI/hBBA/VxyE3N3C8ox/p8C+SArxM8LO3tr8pjfOSFnpUVfCOPUTTnxQPoNSPROzAMV0ozV/j9U6V20gmL1jBt60cCKt7nJxAQdRZ+KzrZBdpfz7mL7B1gyde8MinG3v3HRRCIYvMoeC1893GXDRLQbl8Ymgg4qWiSvDFF1Eo5HxxSPsPY9Di5hTwXeWGvdqBCdEiFajRBw8MNoF1qQ00ymfCtAY6lQ3EbusQxiplZAMungQjAQ/RivdRmg=
